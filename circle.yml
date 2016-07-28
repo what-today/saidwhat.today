@@ -26,6 +26,10 @@ dependencies:
     - gcloud config set project $GCLOUD_PROJECT
     - gcloud config set app/use_gsutil true  # https://groups.google.com/forum/#!topic/google-cloud-sdk/GGR-eotO4aQ
 
+test:
+  override:
+    - echo "test"
+
 deployment:
     staging:
         branch: master

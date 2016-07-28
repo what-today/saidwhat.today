@@ -1,10 +1,5 @@
-<!doctype html>
-<html>
-    <head>
-    <title>What Did {{ name }} Say Today?</title>
-    <link rel="stylesheet" href="//saidwhat.today/static/style.css" type="text/css" />
-    </head>
-    <body>
-        <div>{{ line }}</div>
-    </body>
-</html>
+{% extends 'base.html' %}
+
+{% block title %}What Did {{ name }} Say Today?{% endblock %}
+
+{% block content %}<div>{{ line }}</div>{% endblock %}

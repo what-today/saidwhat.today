@@ -1,10 +1,5 @@
-<!doctype html>
-<html>
-    <head>
-    <title>What did someone say today?</title>
-    <link rel="stylesheet" href="//saidwhat.today/static/style.css" type="text/css" />
-    </head>
-    <body>
-        <div>What did someone say today?</div>
-    </body>
-</html>
+{% extends 'base.html' %}
+
+{% block title %}What Did Someone Say Today?{% endblock %}
+
+{% block content %}{{ self.title() }}{% endblock %}
